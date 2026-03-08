@@ -1,9 +1,12 @@
 body {
-    /* background-color: #458094; */
-    background-color: #71DAF0;
+    background-color: #002c42;
 }
 
-/* img { 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img { 
     image-rendering: optimizeSpeed;             
     image-rendering: -moz-crisp-edges;          
     image-rendering: -o-crisp-edges;            
@@ -12,7 +15,16 @@ body {
     image-rendering: optimize-contrast;         
     -ms-interpolation-mode: nearest-neighbor;   
 
-} */
+}
+
+img.background {
+    position: absolute;
+    left: 0;
+    top:0;
+    z-index: -1;
+
+    width: 100%;
+}
 
 .overall {
 
