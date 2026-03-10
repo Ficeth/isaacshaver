@@ -6,16 +6,6 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-img { 
-    image-rendering: optimizeSpeed;             
-    image-rendering: -moz-crisp-edges;          
-    image-rendering: -o-crisp-edges;            
-    image-rendering: -webkit-optimize-contrast; 
-    image-rendering: pixelated;                 
-    image-rendering: optimize-contrast;         
-    -ms-interpolation-mode: nearest-neighbor;   
-}
-
 body {
     font-size: 1.4em;
     color: #2A5650;
@@ -42,6 +32,14 @@ img.background {
 
     object-fit: cover;
     height:38em;
+
+    image-rendering: optimizeSpeed;             
+    image-rendering: -moz-crisp-edges;          
+    image-rendering: -o-crisp-edges;            
+    image-rendering: -webkit-optimize-contrast; 
+    image-rendering: pixelated;                 
+    image-rendering: optimize-contrast;         
+    -ms-interpolation-mode: nearest-neighbor;   
 }
 
 
