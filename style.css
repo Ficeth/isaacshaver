@@ -17,10 +17,12 @@ img {
 }
 
 body {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #2A5650;
 
     line-height: 1.5em;
+
+    margin:0px;
     
 }
 
@@ -31,10 +33,15 @@ header {
 img.background {
     position: absolute;
     left: 0;
-    top:0;
+    top:-18em;
     z-index: -1;
 
+    object-position: top center;
+
     width: 100%;
+
+    object-fit: cover;
+    height:38em;
 }
 
 
@@ -63,8 +70,10 @@ img.background {
     overflow: hidden;
     background-color: #352a2e;
     text-align: left;
-    padding: 1em;
     padding-top:0px;
+    padding: 1em;
+    z-index: -1;
+    width:100%;
 
     color: #599DA0;
 }
@@ -77,7 +86,7 @@ h1 {
 }
 
 button {
-    background-color: #04AA6D; /* Green */
+    background-color: #2A5650   ; /* Green */
     border: none;
     color: white;  
     padding: 16px 32px;
@@ -88,4 +97,31 @@ button {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+
+    position: relative;
+}
+
+button:hover {
+    background-color: #352a2e;
+}
+
+.resume {
+
+    border-style:outset;
+    border-width: 0.4em;
+    border-color: #352a2e;
+
+    background-color: #599DA0;
+    color: white;
+
+    padding: 1em;
+
+    margin: 1em;
+
+    text-align: center;
+
+}
+
+.resume p {
+    display: inline-block;
 }
