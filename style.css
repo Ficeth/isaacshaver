@@ -14,7 +14,18 @@ img {
     image-rendering: pixelated;                 
     image-rendering: optimize-contrast;         
     -ms-interpolation-mode: nearest-neighbor;   
+}
 
+body {
+    font-size: 1.5em;
+    color: #2A5650;
+
+    line-height: 1.5em;
+    
+}
+
+header {
+    height: 20em;
 }
 
 img.background {
@@ -26,17 +37,55 @@ img.background {
     width: 100%;
 }
 
+
 .overall {
 
     border-style:outset;
-    border-width: 0.6em;
+    border-width: 0.4em;
     border-color: #599DA0;
 
     background-color: white;
 
-    padding: 0.5em;
+    padding: 1em;
 
-    margin: 2em;
+    margin: 1em;
 
     color: #2A5650;
+}
+
+.two-columns-grid {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #352a2e;
+    text-align: left;
+    padding: 1em;
+    padding-top:0px;
+
+    color: #599DA0;
+}
+
+h1 {
+    margin: 0em;
+    font-size: 1.5em;
+
+    padding: 0.2em;
+}
+
+button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;  
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
 }
